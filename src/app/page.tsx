@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { sql } from "@vercel/postgres";
-
+  
 
 const likes = 100;
 export default async function Home() {

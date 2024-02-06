@@ -1,5 +1,4 @@
 .navbarContainer {
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center; /* Optional: align items vertically in the center */
@@ -11,6 +10,41 @@
   
   .menuContainer {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 0.1;
     justify-content: space-around;
   }
+
+  .cartContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: sticky;
+    top:0;
+    z-index: 30;
+    align-items: end;
+    flex-grow: 0.01;
+  }
+
+  .logoImage {
+    width: 175px; 
+    height: auto; 
+    display: block;  
+    margin-right: 250;
+  }
+  
+  .cartIcon {
+    width: 40px; 
+    height: auto; 
+    display: block;  
+  }
+  .searchIcon{
+    width: 40px; 
+    height: auto; 
+    display: block; 
+  }
+
+  .profileIcon{
+    width: 40px; 
+    height: auto; 
+    display: block; 
+  } 
