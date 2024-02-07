@@ -1,16 +1,16 @@
 import Link from "next/link"
 import "./Navbar.css"
 import React from 'react';
+import { CiShoppingCart ,CiUser, CiSearch } from "react-icons/ci";
 
-const Cart = () =>{
+const Cart = () => {
     return (
         <div className="cartContainer">
-        <Link href={"/"}><img src="cart.png" alt="Cart Icon" className="cartIcon"/></Link>
-        <Link href={"/"}><img src="profile.jpg" alt="profile Icon" className="profileIcon"/></Link>
-        <Link href={"/"}><img src="search.jpg" alt="search Icon" className="searchIcon"/></Link>
-    </div>
+            <Link href={"/"}><CiShoppingCart size={40} /></Link>
+            <Link href={"/"}><CiSearch size={40} /></Link>
+            <Link href={"/"}><CiUser size={40} /></Link>
+        </div>
     )
- 
 }
 
 export default Cart
