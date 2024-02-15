@@ -1,11 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-// import Data from "@/app/scripts/mockData"
+import data from "@/app/scripts/mockData"
+import ProductGrid from "@/app/(components)/ProductGrid"
 
 export default function Home() {
     return (
         <>
             <h1>Home Page</h1>
+            <ProductGrid data={data} />
         </>
     );
 }
