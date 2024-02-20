@@ -1,5 +1,4 @@
 .ProductCardBox{
-background-color: green;
 display: flex; 
 justify-content: center;
 flex-wrap: wrap;
@@ -7,7 +6,6 @@ margin-top: 100px;
 }
 
 .productCard{
-    background-color: red;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -16,6 +14,15 @@ margin-top: 100px;
     padding-right: 5px;
     border: 2px solid black;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin-bottom: 10px;
-    
+    margin: 10px;
+    gap:10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.productCard:hover{
+    transition: opactiy 0.3s linear;
+    opacity: 1;  transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 5;
 }

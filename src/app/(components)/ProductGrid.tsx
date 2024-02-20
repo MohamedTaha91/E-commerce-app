@@ -7,6 +7,7 @@ interface ProductGridProps {
 
 const ProductGrid = (props: ProductGridProps) => {
     console.log("data", props.data)
+    console.log("ProductGrid params", props.params)
     return (
         <div >
             <div className="ProductCardBox">
@@ -17,6 +18,7 @@ const ProductGrid = (props: ProductGridProps) => {
                         image={product.image}
                         price={product.price}
                         key={product.id}
+                        id={product.id}
                     />
                     )
                 })}
