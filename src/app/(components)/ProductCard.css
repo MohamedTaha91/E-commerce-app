@@ -1,0 +1,28 @@
+.ProductCardBox{
+display: flex; 
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 100px;
+}
+
+.productCard{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    flex: 1 30%;
+    flex-grow: 1;
+    padding-right: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 10px;
+    gap:10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.productCard:hover{
+    transition: opactiy 0.3s linear;
+    opacity: 1;  transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 5;
+}
